@@ -1,9 +1,68 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
         <script data-main="app" src="lib/require.js"></script>
     </head>
+
     <body>
-        <h1>Hello World</h1>
-    </body>
+
+      <div class="container">
+
+        <div class="figure">
+          <div id="radialContainer1"></div>
+          <h2 class="figure-heading-text">REVENUE</h2>
+          <p class="main-data"><span id="total-revenue">loading...</span>€</p>
+          <div class="bottom-section">
+            <div class="device-headers">
+              <h3 id="tablet-header1">Tablet</h3>
+              <h3 id="smartphone-header1">Smartphone</h3>
+            </div>
+            <div class="bottom-section-data-wrapper">
+              <p class="tablet-data"><span class="percentage"><span id="tablet-revenue-percentage"></span>%</span> <span id="tablet-revenue-number"></span> €</p>
+              <p class="smartphone-data"><span class="percentage"><span id="smartphone-revenue-percentage"></span>%</span> <span id="smartphone-revenue-number"></span> €</p>
+            </div>
+            <hr />
+          </div>
+        </div>
+
+        <div class="figure">
+          <div id="radialContainer2"></div>
+          <h2 class="figure-heading-text">IMPRESSIONS</h2>
+          <p class="main-data"><span id="total-impressions">loading...</span></p>
+          <div class="bottom-section">
+            <div class="device-headers">
+              <h3 id="tablet-header2">Tablet</h3>
+              <h3 id="smartphone-header2">Smartphone</h3>
+            </div>
+            <div class="bottom-section-data-wrapper">
+              <p class="tablet-data"><span class="percentage"><span id="tablet-impressions-percentage"></span>%</span> <span id="tablet-impressions-number"></span></p>
+              <p class="smartphone-data"><span class="percentage"><span id="smartphone-impressions-percentage"></span>%</span> <span id="smartphone-impressions-number"></span></p>
+            </div>
+            <hr />
+          </div>
+        </div>
+
+        <div class="figure">
+          <div id="radialContainer3"></div>
+          <h2 class="figure-heading-text">VISITS</h2>
+          <p class="main-data"><span id="total-visits">loading...</span></p>
+          <div class="bottom-section">
+            <div class="device-headers">
+              <h3 id="tablet-header3">Tablet</h3>
+              <h3 id="smartphone-header3">Smartphone</h3>
+            </div>
+            <div class="bottom-section-data-wrapper">
+              <p class="tablet-data"><span class="percentage"><span id="tablet-visits-percentage"></span>%</span> <span id="tablet-visits-number"></span></p>
+              <p class="smartphone-data"><span class="percentage"><span id="smartphone-visits-percentage"></span>%</span> <span id="smartphone-visits-number"></span></p>
+            </div>
+            <hr />
+          </div>
+        </div>
+
+    </div>
+
+  </body>
+
 </html>

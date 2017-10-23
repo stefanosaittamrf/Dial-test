@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h2, h3, p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  font-weight: 400;
+  color: rgb(172, 172, 172);
+}
+
+hr {
+  border: 0.9px solid #ccc;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.figure {
+  width: 360px;
+  text-align: center;
+  margin: 0 30px;
+}
+
+.figure-heading-text {
+  position: relative;
+  top: -160px;
+  text-align: center;
+  color: rgb(172, 172, 172);
+  font-size: 1.3rem;
+}
+
+.main-data {
+  position: relative;
+  top: -160px;
+  font-size: 1.9rem;
+  color: rgb(23, 23, 23);
+}
+
+.bottom-section {
+  position: relative;
+  top: -40px;
+}
+
+.device-headers {
+  margin-top: -30px;
+  font-weight: 600;
+  height: 30px;
+}
+
+.bottom-section-data-wrapper {
+  height: 35px;
+}
+
+#tablet-header1, #tablet-header2, #tablet-header3, .tablet-data {
+  float: left;
+}
+
+#smartphone-header1, #smartphone-header2, #smartphone-header3, .smartphone-data {
+  float: right;
+}
+
+#tablet-header1 {
+  color: #4bdb32;
+}
+
+#smartphone-header1 {
+  color: #207a11;
+}
+
+#tablet-header2 {
+  color: #2ee1f2;
+}
+
+#smartphone-header2 {
+  color: #2d347f;
+}
+
+#tablet-header3 {
+  color: #efd840;
+}
+
+#smartphone-header3 {
+  color: #e0790b;
+}
+
+.percentage {
+  color: rgb(48, 48, 48);
+  margin-right: 10px;
+}
+
+
+/*To prevent the numbers from overlapping on small phone screens....*/
+@media only screen and (max-width: 400px) {
+  .figure {
+    margin: 0;
+  }
+
+  .percentage {
+    margin-right: 5px;
+  }
+
+}
