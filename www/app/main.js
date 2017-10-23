@@ -98,6 +98,10 @@ define(function(require) {
     document.getElementById(id).innerHTML = value;
   }
 
+  function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  }
+
   function updateRevenue(revenue) {
     updateElement("total-revenue", numberWithCommas(revenue.total));
     updateElement("tablet-revenue-number", numberWithCommas(revenue.tablet));
@@ -131,10 +135,6 @@ define(function(require) {
 
 
   // Main ---------------------------------------------------------------------------------------------------------------
-
-  function numberWithCommas(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-  }
 
   retrieveData(true, function(data) {
     updateRevenue(data.revenue);
