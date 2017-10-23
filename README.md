@@ -1,8 +1,7 @@
 ## Dial Test
 
 View the project here: https://willjthorp.github.io/Dial-test/
-
- ---
+ 
  
  ## Technologies used
  
